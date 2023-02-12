@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webstudio</title>
     <!--Styles-->
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,22 +30,24 @@
                 <a class="nav-menu-item" href="./contacts.html">Contacts</a>
                 </li>
                 </ul>
-            </nav>   
-            <ul class="contacts-list">
-                <li> <a class="contacts-list-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li> <a class="contacts-list-item" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            </ul>
+            </nav> 
+            <address class="page-adress">
+                <ul class="contacts-list">
+                    <li> <a class="contacts-list-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li> <a class="contacts-list-item" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>  
         </div>
     </header>
+
     <main>
-        <section class="portfolio-section section-bottom">
+        <section class="portfolio-section">
             <div class="portfolio-container container">
             <!-- BUTTONS -->
             <h2 class="filter-button-header">Filter buttons</h2>
              <ul class="list portfolio-buttons">
                 <li class="portfolio-list">
                     <button class="filter-button" type="button">All</button>
-
                 </li>
                 <li class="portfolio-list">
                     <button class="filter-button" type="button">Web Site</button>
@@ -130,10 +132,8 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <logo class="logo-footer">
                 <a href="./index.html" class="logo-first">Web<span class="logo-footer">Studio</span>
                 </a>
-            </logo>
                 <p class="footer-text">
                 Increase the flow of customers and sales for your business with digital marketing & growth solutions.
                  </p>

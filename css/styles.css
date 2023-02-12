@@ -82,12 +82,10 @@ ul {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 0px;
-    padding-bottom: 0px;
 }
 
 .section-bottom {
-    padding-top: 96px;
+    padding-top: 120px;
     padding-bottom: 120px;
 }
 
@@ -117,14 +115,15 @@ ul {
 }
 
 .nav-menu-item {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: var(--letter-spacing-primary);
     color: var(--color-brand);
     text-decoration: none;
-    margin: 0px 40px 0px 0px;
-    padding: 24px 0px;
+    margin: 24px 0px;
+    padding-right: 40px;
  }
 
  .nav-menu-item:hover {
@@ -135,6 +134,14 @@ ul {
     color: var(--color-secondary-dark);
  }
 
+ .nav-menu-item:last-child {
+    margin-right: 0;
+ }
+
+ .page-adress {
+    display: flex;
+ }
+ 
  .contacts-list {
     display: flex;
     margin-left: auto;
@@ -142,12 +149,17 @@ ul {
  }
 
 .contacts-list-item {
+    display: block;
     color: var(--color-primary);
     font-size: 16px;
     line-height: 1.5;
     text-decoration: none;
-    margin: 0px 40px 0px 0px;
-    padding: 24px 0px;
+    margin: 24px 0px;
+    padding-right: 40px;
+}
+
+.contacts-list-item:last-child {
+    margin: 0;
 }
 
 .logo-header {
@@ -164,8 +176,8 @@ ul {
     text-transform: uppercase;
     color: var(--color-secondary);
     text-decoration: none;
-    display: inline-block;
-    padding: 24px 0px;
+    display: block;
+    margin: 24px 0px;
 }
 
 .logo-second {
@@ -182,7 +194,6 @@ ul {
 .hero-section {
     background-color: var(--color-brand); 
     padding: 192px 0px;
-    margin-bottom: 120px;
 }
 
 .hero-container {
@@ -223,6 +234,10 @@ ul {
 
 .h2-visually-hidden {
     display: none;
+}
+
+.advantages-section {
+    padding-top: 120px;
 }
 
 .advantages-list {
@@ -277,8 +292,6 @@ ul {
 .team-card-wrapper {
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-left: 16px; 
-    padding-right: 16px;
 }
 .team-section {
     background-color: #F4F4FD;;
@@ -317,6 +330,7 @@ ul {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: var(--letter-spacing-primary);
+    margin-bottom: 8px;
 }
 
 .position{
@@ -340,14 +354,18 @@ ul {
 }
 
 /* PORTFOLIO */
+.portfolio-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
 .filter-button-header {
     display: none;
 }
 
 .portfolio-buttons {
     display: flex;
-    margin: 0px 0px 72px 0px;
-    justify-content: center;
+    justify-content: center;  
 }
 
 .filter-button {
@@ -359,18 +377,14 @@ ul {
     letter-spacing: var(--letter-spacing-secondary);
     background: var(--color-btn-background);
     border: 1px solid var(--color-secondary-inverted);
-    border-radius: 4px;
-    width: auto;
-    align-items: centre;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    left: 93px;
-    height: 48px;
     padding: 12px 24px;
-    top: 0px;
-    margin: 24px;
+    margin-bottom: 72px;
+    margin-left: 24px;
+}
 
+.filter-button:last-child {
+    margin-right: 0;
 }
 
 .filter-button:hover {
@@ -398,13 +412,14 @@ ul {
 .portfolio-card {
     margin-bottom: 48px;
     margin-right: 24px;
-    width: 360px;
+    flex-basis: calc(100-24 / 9);
 }
 .service-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: var(--letter-spacing-primary);
+    margin-bottom: 8px;
 }
 
 .service-text {
