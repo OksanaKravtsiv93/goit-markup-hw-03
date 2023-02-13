@@ -102,16 +102,18 @@ ul {
 
 .header-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .nav-menu {
     display: flex;
     align-items: center;
+    flex-grow: 1;
 }
 
 .list-nav-menu {
     display: flex;
+    gap: 40px;
 }
 
 .nav-menu-item {
@@ -122,11 +124,10 @@ ul {
     letter-spacing: var(--letter-spacing-primary);
     color: var(--color-brand);
     text-decoration: none;
-    margin: 24px 0px;
-    padding-right: 40px;
+    padding: 24px 0px;
  }
 
- .nav-menu-item:hover {
+.nav-menu-item:hover {
     color: var(--color-secondary);
 }
 
@@ -146,6 +147,7 @@ ul {
     display: flex;
     margin-left: auto;
     align-items: center;
+    gap: 40px;
  }
 
 .contacts-list-item {
@@ -154,8 +156,9 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     text-decoration: none;
-    margin: 24px 0px;
-    padding-right: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-style: normal;
 }
 
 .contacts-list-item:last-child {
@@ -177,15 +180,25 @@ ul {
     color: var(--color-secondary);
     text-decoration: none;
     display: block;
-    margin: 24px 0px;
 }
 
 .logo-second {
     color: var(--color-brand);
     margin-right: 76px;
-    padding: 24px 0px;
 }
 
+.footer-logo {
+    font-family: var(--font-logo);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: var(--letter-spacing-logo);
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 16px;
+}
 .logo-footer {
     color: var(--color-btn-background);
     margin-right: 76px;
@@ -350,7 +363,6 @@ ul {
     line-height: 1.5;
     letter-spacing: var(--letter-spacing-primary);
     width: 284px;
-    margin-top: 16px;
 }
 
 /* PORTFOLIO */
@@ -366,6 +378,8 @@ ul {
 .portfolio-buttons {
     display: flex;
     justify-content: center;  
+    margin-bottom: 72px;
+    gap: 24px;
 }
 
 .filter-button {
@@ -379,12 +393,7 @@ ul {
     border: 1px solid var(--color-secondary-inverted);
     cursor: pointer;
     padding: 12px 24px;
-    margin-bottom: 72px;
-    margin-left: 24px;
-}
 
-.filter-button:last-child {
-    margin-right: 0;
 }
 
 .filter-button:hover {
@@ -412,7 +421,7 @@ ul {
 .portfolio-card {
     margin-bottom: 48px;
     margin-right: 24px;
-    flex-basis: calc(100-24 / 9);
+    flex-basis: calc((100% - 3 * 24px) / 3);
 }
 .service-title {
     font-weight: 500;
