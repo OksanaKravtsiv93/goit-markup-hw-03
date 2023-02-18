@@ -184,7 +184,7 @@ ul {
 
 .logo-second {
     color: var(--color-brand);
-    margin-right: 76px;
+    padding-right: 76px;
 }
 
 .footer-logo {
